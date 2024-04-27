@@ -84,4 +84,18 @@ so there are many steps and works to move data around and we need to be as fast 
 
 the smaller faster and costlier. the larger, slower and cheaper
 
-well well well, software that most take it for granted (OS)
+well well well, software that most take it for granted (OS), in short operating system lies between application program e.g. `hello` program, and hardware(cpu, main memory, I/O devices, etc...)
+
+every request by app program to hardware must to through the OS, to protect hardware from misuse by malicious software, provide simple way for software to work with hardware
+
+OS provide abstractions(that doesn’t exist in real world), ***Files*** and I/O device, ***virtual memory*** as main memory and I/O devices, ***Processes*** and Processor, Main memory and I/O devices.
+
+A process is the operating system's abstraction for a running program and many program can run concurrently(each process have exclusive use of hardware and CPU switch rapidly to execute few instruction from one process and few from another process, aka **context switching**)
+
+in a process consist of multiply execution unit called Threads, it is easier to share data between multiple threads that multiple process, with threads you can build faster software.
+
+Virtual memory is an abstraction that provides each process with the illusion that it has exclusive use of main memory. heap, stack. (chapter 9)
+
+File is a sequence of bytes, that's it. every I/O device like disks, keyboards, displays, network is modeled as a file. and all input and output in the system is performed by reading and writing files. (chapter 10)
+
+Internet, enables communication between two computer. network adapter is just another I/O device in computer that sends data to another computer instead of local disk using internet.
