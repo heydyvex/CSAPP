@@ -29,4 +29,14 @@ Mathematician thought **Hexadecimal** would be better to describing bit patterns
 | F           | 15      | 1111   |
 
 markdown table with hexadecimal, decimal, and binary representations from 0 to 15.
+there is bunch of practice for how to convert these numbers system to each other, I don’t get into that here.
+
+word size, indicate the size of pointer data, virtual address space is where there is range of addresses pointing to some blocks of memory, 32 bit word size system means that each pointer is 32 bit, a virtual address space can address to 2^32 byte memory (32 bit can handle 4 Gigabyte and 64 bit can handle 16 Exabyte)
+64-bit and 32-bit is about CPU architecture just keep that in mind, registers only can carry amount of CPU's word size, which can be 32 or 64.
+
+book is talking about C data types and amount of memory for each one (byte), I don’t list them here.
+
+a pointer is a simple address that is pointing to a data in memory, type of pointer indicate the type of the data it's pointing at.
+
+
 
