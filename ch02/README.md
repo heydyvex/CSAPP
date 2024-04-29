@@ -39,4 +39,20 @@ book is talking about C data types and amount of memory for each one (byte), I d
 a pointer is a simple address that is pointing to a data in memory, type of pointer indicate the type of the data it's pointing at.
 
 
+for a program object that is multiple bytes, there must conventions to how to order bytes in memory and what would address of the object be.
 
+a multi-byte object is stored as contiguous sequence of bytes(next to each other) and for example you have value `x` type `int` has address `0x100` then the 4 bytes would be stored in memory location `0x100, 0x101, 0x102, 0x103`.
+
+for ordering bytes that representing an object there are two conventions, *little endian* and *big endian*.
+in little endian system the byte with smallest weight(least significant byte) is stored first. and in big endian vice versa, the byte with largest weight(most significant byte) is stored first.
+for example: you have `0x02346798` at address `0x100`  
+**little endian** would look like:
+
+| `0x100` | `0x101` | `0x102` | `0x103` |
+| ------- | ------- | ------- | ------- |
+| `98`    | `67`    | `34`    | `02`    |
+**big endian** would look like:
+
+| `0x100` | `0x101` | `0x102` | `0x103` |
+| ------- | ------- | ------- | ------- |
+| `02`    | `34`    | `67`    | `98`    |
