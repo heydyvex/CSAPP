@@ -56,3 +56,13 @@ for example: you have `0x02346798` at address `0x100`
 | `0x100` | `0x101` | `0x102` | `0x103` |
 | ------- | ------- | ------- | ------- |
 | `02`    | `34`    | `67`    | `98`    |
+
+Boolean algebra is the core principle of how computer encode, store, and manipulate information, boolean algebra is about **True** and **False** or **1** and **0** for logical reasoning and there is three fundamental operations `NOT` , `AND`, `OR`
+
+Wow, I didn’t know Claude Shannon was the person who made the first connection between algebra and digital logic.
+
+bit-level operation in C is a little confusing with hexadecimal, because it turn it to bit (bit-level) and do operation, just don’t be an idiot when you see it again.
+
+Integer Representation can be encoded in two different ways, one that can only represent nonnegative numbers(Unsigned integers in C), one that can represent negative, zero, and positive numbers(Signed integers in C) and there is a maximum range that can be stored in one integer variable (it is 64-bit all 1 ).
+
+rest of the chapter is boring, just taking a look only.
