@@ -1,5 +1,7 @@
 # Chapter 2: Representing and Manipulating Information
 
+[some homework problem](problem/)  
+
 ## Notes
 
 Binary digits(bits) are used in computers and representing data, because it is easy to do, high or low voltage, turn on or turn off, Up or down etc...
