@@ -34,14 +34,7 @@ void test_show_bytes(int val){
 }
 
 int main(){
-    // test_show_bytes(12345);
-    int val = 0x898;
-    byte_pointer valp = (byte_pointer) &val;
-    // show_bytes(valp, 1); /* A. */
-    // show_bytes(valp, 2); /* B. */
-    // show_bytes(valp, 3); /* C. */
-    show_bytes(valp, sizeof(val));
-    // const char *s = "int sum(int x, int y) { return x + y; }";
-    // show_bytes((byte_pointer) s, strlen(s));
+    test_show_bytes(12345);
+    
     return 0;
 }
