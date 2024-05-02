@@ -39,12 +39,13 @@ Pentium II, 1997, 7M
 | i9 13900K         | 2022 | 26 G                          | 64-bit          |
 | i9 14900k         | 2023 | Unknown but guess around 26 G | 64-bit          |
 Personal comment (may 2024):
-"this is wild 😂, but we are limited by laws of Physics and cannot put more transistor in a small area as before, I think we need a new paradigm for computing a new whole architecture from scratch that is "scalable", because current chips are not scalable anymore.  
+"this is wild 😂, but we are limited by laws of Physics and cannot put more transistor in a small area as before, I think we need a new paradigm and principle for computing a new whole architecture from scratch that is "scalable", current chips are not scalable anymore.  
 also we need skilled software engineers to make the most of chips, right now software engineers have skill issues and take everything for granted, use so much hardware recourse and software is complete BS.  
 I must be a good software engineer period."
 
 this command `gcc -Og` make your machine code less optimized and more readable for debugging or something like that `-O(blah)` will do this in few level, check your compiler doc, it is also available for Clang (I checked it out).
 
+as I took some note of compiler process in chapter 1, it is amazing process to make easier coding for us, otherwise we had to code in assembly(aliens language). first C preprocessor happens(#include files blah blah) then generate assembly version of the program, then converts the assembly code to object code(a kind of machine code) by assembler, then it is time to merge and link files together by linker and after that you have a executable code(another kind of machine code).
 
 
 
