@@ -9,15 +9,11 @@ In late 1978 Intel designed 8086 microprocessor (29,000 transistors), one of the
 
 x86 architecture was used for these microprocessors and is one of the most popular chip architecture alongside ARM(I like this more).
 
-1,000 = K
-1,000,000 = M
-1,000,000,000 = G
+1,000 = K  
+1,000,000 = M  
+1,000,000,000 = G  
 
-intel chips: 
-, ,  T, 32-bit
-, 1995, 5.5M T, 32-bit
-Pentium/MMX, 1997, 4.5 T, 32-bit
-Pentium II, 1997, 7M 
+**intel chips**:
 
 | Chip              | Year | Transistor                    | word size (bit) |
 | ----------------- | ---- | ----------------------------- | --------------- |
@@ -38,7 +34,8 @@ Pentium II, 1997, 7M
 | Core i7 Haswell   | 2013 | 1.4 G                         | 64-bit          |
 | i9 13900K         | 2022 | 26 G                          | 64-bit          |
 | i9 14900k         | 2023 | Unknown but guess around 26 G | 64-bit          |
-Personal comment (may 2024):
+
+Personal comment (may 2024):  
 "this is wild 😂, but we are limited by laws of Physics and cannot put more transistor in a small area as before, I think we need a new paradigm and principle for computing a new whole architecture from scratch that is "scalable", current chips are not scalable anymore.  
 also we need skilled software engineers to make the most of chips, right now software engineers have skill issues and take everything for granted, use so much hardware recourse and software is complete BS.  
 I must be a good software engineer period."
