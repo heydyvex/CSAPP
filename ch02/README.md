@@ -47,12 +47,14 @@ a multi-byte object is stored as contiguous sequence of bytes(next to each other
 
 for ordering bytes that representing an object there are two conventions, *little endian* and *big endian*.
 in little endian system the byte with smallest weight(least significant byte) is stored first. and in big endian vice versa, the byte with largest weight(most significant byte) is stored first.
-for example: you have `0x02346798` at address `0x100`  
+for example: you have `0x02346798` at address `0x100` 
+
 **little endian** would look like:
 
 | `0x100` | `0x101` | `0x102` | `0x103` |
 | ------- | ------- | ------- | ------- |
 | `98`    | `67`    | `34`    | `02`    |
+
 **big endian** would look like:
 
 | `0x100` | `0x101` | `0x102` | `0x103` |
