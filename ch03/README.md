@@ -36,11 +36,7 @@ x86 architecture was used for these microprocessors and is one of the most popul
 | i9 14900k         | 2023 | Unknown but guess around 26 G | 64-bit          |
 
 Personal comment (may 2024):  
-<<<<<<< HEAD
 "this is wild 😂, but we are limited by laws of Physics and cannot put more transistor in a small area as before, I think we need a new paradigm and principle for computing a new whole architecture from scratch that is "scalable", current chips are not scalable anymore.  
-=======
-"this is wild 😂, but we are limited by laws of Physics and cannot put more transistor in a small area as before, I think we need a new paradigm and principle for computing a new whole architecture from scratch that is "scalable", current chips are not scalable anymore.    
->>>>>>> 41e1ef5 (Update chapter 3)
 also we need skilled software engineers to make the most of chips, right now software engineers have skill issues and take everything for granted, use so much hardware recourse and software is complete BS.  
 I must be a good software engineer period."
 
