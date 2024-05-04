@@ -128,3 +128,83 @@ Disassembly of section __TEXT,__text:
 
 this is what disassembled a assembled code look like.
 
+to make the code executable we need to run a **linker** on object-code files, and C code need to contain a `main` function in order to do that so:
+```c
+#include <stdio.h>
+
+void multstore(long, long , long *);
+
+int main() {
+	long d;
+	multstore(2, 3, &d);
+	printf("2 * 3 -> %ld\n", d);
+	return 0;
+}
+
+long mult2(long a, long b) {
+	long s = a * b;
+	return s;
+}
+```
+
+command for executable code : `clang -Og -o prog main.c program.c`
+now we have executable code named `prog` and we can disassemble it to see what changed  
+command: `objdump -d prog` 
+
+```
+
+prog:	file format mach-o arm64
+
+Disassembly of section __TEXT,__text:
+
+0000000100003f10 <_main>:
+100003f10: d10083ff    	sub	sp, sp, #32
+100003f14: a9017bfd    	stp	x29, x30, [sp, #16]
+100003f18: 910043fd    	add	x29, sp, #16
+100003f1c: 910023e2    	add	x2, sp, #8
+100003f20: 52800040    	mov	w0, #2
+100003f24: 52800061    	mov	w1, #3
+100003f28: 9400000c    	bl	0x100003f58 <_multstore>
+100003f2c: f94007e8    	ldr	x8, [sp, #8]
+100003f30: f90003e8    	str	x8, [sp]
+100003f34: 90000000    	adrp	x0, 0x100003000 <_main+0x24>
+100003f38: 913e2000    	add	x0, x0, #3976
+100003f3c: 94000010    	bl	0x100003f7c <_printf+0x100003f7c>
+100003f40: 52800000    	mov	w0, #0
+100003f44: a9417bfd    	ldp	x29, x30, [sp, #16]
+100003f48: 910083ff    	add	sp, sp, #32
+100003f4c: d65f03c0    	ret
+
+0000000100003f50 <_mult2>:
+100003f50: 9b007c20    	mul	x0, x1, x0
+100003f54: d65f03c0    	ret
+
+0000000100003f58 <_multstore>:
+100003f58: a9be4ff4    	stp	x20, x19, [sp, #-32]!
+100003f5c: a9017bfd    	stp	x29, x30, [sp, #16]
+100003f60: 910043fd    	add	x29, sp, #16
+100003f64: aa0203f3    	mov	x19, x2
+100003f68: 97fffffa    	bl	0x100003f50 <_mult2>
+100003f6c: f9000260    	str	x0, [x19]
+100003f70: a9417bfd    	ldp	x29, x30, [sp, #16]
+100003f74: a8c24ff4    	ldp	x20, x19, [sp], #32
+100003f78: d65f03c0    	ret
+
+Disassembly of section __TEXT,__stubs:
+
+0000000100003f7c <__stubs>:
+100003f7c: b0000010    	adrp	x16, 0x100004000 <__stubs+0x4>
+100003f80: f9400210    	ldr	x16, [x16]
+100003f84: d61f0200    	br	x16
+
+```
+
+cool, it linked all the files and necessary functions together.
+
+sometimes we need to write assembly code instead of C for some reason, in this case you can write it in another file and link it during linking or you can just embed it in C file, compiler allows you to do that.
+
+we have `word` for number of bits, `word` for 16-bits data, `double word` for 32-bit, `quad word` for 64-bit.  
+and there are 16 general-purpose registers storing 64-bit values(in 64-bit systems) and their name begins with `r`, and for low portions of registers can be accessed.
+
+it is about instructions, it depends on ISA, so just search the architecture and read the manual.
+
