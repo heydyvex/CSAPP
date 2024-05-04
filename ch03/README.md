@@ -128,5 +128,3 @@ Disassembly of section __TEXT,__text:
 
 this is what disassembled a assembled code look like.
 
-
-
