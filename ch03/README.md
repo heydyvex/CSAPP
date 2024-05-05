@@ -204,7 +204,23 @@ cool, it linked all the files and necessary functions together.
 sometimes we need to write assembly code instead of C for some reason, in this case you can write it in another file and link it during linking or you can just embed it in C file, compiler allows you to do that.
 
 we have `word` for number of bits, `word` for 16-bits data, `double word` for 32-bit, `quad word` for 64-bit.  
-and there are 16 general-purpose registers storing 64-bit values(in 64-bit systems) and their name begins with `r`, and for low portions of registers can be accessed.
+and there are 16(depends on the architecture) general-purpose registers storing 64-bit values(in 64-bit systems) and their name begins with `r`, and for low portions of registers can be accessed.
 
 it is about instructions, it depends on ISA, so just search the architecture and read the manual.
 
+we can categorize assembly instruction set to make it more clear and better, how I want to see it is basically there is two main things here: data(information) and operation(computation), instructions also can be categorize in two:
+- registers for holding data
+- operation code (aka opcode) for changing and moving and transforming data
+and for opcode we can categorize it to two:
+- opcode for moving data and memory addresses between locations like registers, memory and I/O
+- opcode to do computational operation:
+	- Arithmetic operations (add, sub, mul, div, ...)
+	- logical operations (and, or, not, xor, ...)
+	- control operations (jmp, call, ret, ..)
+
+
+Procedures are building block of software and are a key abstraction in software, a way to package code that have some functionality with accepting parameter and returning value. it is different in programming languages, a procedure can be function, method, subroutines, handlers etc..., in C they are referred to as **functions**. 
+
+Procedure-calling mechanism in C and most programming languages done by Stack data structure also called **Run-time Stack**. 
+
+in run-time stack, program push function to stack, do memory allocation for local variables and something like that, then using program counter(PC) transfer control from one function to another, and data transfer via registers.
