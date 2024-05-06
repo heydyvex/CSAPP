@@ -224,3 +224,17 @@ Procedures are building block of software and are a key abstraction in software,
 Procedure-calling mechanism in C and most programming languages done by Stack data structure also called **Run-time Stack**. 
 
 in run-time stack, program push function to stack, do memory allocation for local variables and something like that, then using program counter(PC) transfer control from one function to another, and data transfer via registers.
+
+Understanding Pointers, they provide consistent way to generate references to elements within different data structure(it just points to elements in different data structure).  
+- **Every pointer has an associated type**: that type indicates what kind of object the pointer points to. they are not part of machine code, just an abstraction provided by C to help avoid addressing errors.
+- **every pointer has a value**: this value is an address of some element that pointer is pointing to.
+- **Pointers are created with the "&" operator**: this operator can be used for any expression that appear on the left side of assignment(every expression that has an identifiable location in memory called "Ivalue"), in assembly address can be accessed via `lea` instruction.
+- **Casting from one type of pointer to another changes its type but not its value**: casting a pointer changes the type information the type information associated with the pointer. (keep in mind actual value will remain its original type, but compiler will treat it as pointer type if you access it with the pointer that you casted). also when you have `char *p` and a pointer `p` pointing to it, if you cast pointers type to `(int *) p + 7` this is going to do pointer arithmetic then add, this is a correct `(int *) (p + 7)`.
+- **pointers can also point to functions**: pointers can be used to point to functions (although I guess this is not a good idea at all, but book doesn’t say that)
+
+
+You can do run-time analysis with a debugger like GDB on linux and use LLDB on mac.
+
+Out-of-Bound memory can lead to buffer overflow and it is a security vulnerability so be carful what you are doing bro.
+
+Floating-Point instructions are different than Integer data types in assembly just for the record.
