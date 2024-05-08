@@ -1,1 +1,3 @@
 # Chapter 4: Processor Architecture
+
+Modern microprocessors are among the most complex systems ever created by humans, in fact it is nanotechnology, billions of transistor in a very small space. it is improved very very much since the first silicon chip, and got cheaper than it was before, for example apple M4 chip is the most powerful chip in the world that you can "buy" and it is cheap as hell, cannot wait to see what will come in the next decade.
