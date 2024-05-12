@@ -23,3 +23,8 @@ Experiment with different algorithms or data structures and observe how the asse
 7 - Obtain a simple executable file (e.g., a small utility program) and disassemble it using a tool like `objdump` or `gdb`. Analyze the assembly code to understand how the program works at the machine level.
 Try modifying the assembly code and reassembling it to observe the effects on the program's behavior.
 
+8 - Implement Game of Life cellular automaton 
+
+9 - write a simple operating system Kernel 
+
+10 - building a bootloader? seems very very fun to do.
