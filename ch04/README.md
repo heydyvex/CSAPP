@@ -35,4 +35,20 @@ when you put these function together(with some rules) they construct blocks know
 ![combinational circuits](/assets/combinational_circuit_design_Limited_Gate_Inputs_Example_3.webp)
 
 
-Oh god, not getting into details, I'm in rush for my journey
+Oh god, not getting into details, I'm in rush for my journey.
+
+Stages or steps of a performed instruction in processor:
+- Fetch stage: fetch the instruction from memory
+- Decode stage: Decode the fetched instruction and read the required operands
+- Execute stage: Performs the actual operation specified by the instruction
+- Memory stage: Read from or writes to memory if the instruction involves memory access
+- Write-back: writes the result back to the appropriate register or memory location
+
+Principles of Pipelining, what is pipelining?   
+in a situation where there is no pipelining, an instruction would complete all stages and after that, next instruction would start from first stage and so on...,  
+in a situation where there is pipelining, first instruction fetch then go to next stage, second instruction fetch and so on...
+Pipelining vs non-pipelining:
+![Pipelining vs non-pipelining](/assets/pipelined-vs-non-pipelined-instruction-execution.jpg)
+
+
+I think the best way to understand it, is to design one (a chip). book didn’t get into it that much.
