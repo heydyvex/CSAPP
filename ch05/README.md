@@ -9,3 +9,13 @@ compiler(gcc and clang) can optimize code few level, `-Og` will apply some basic
 `-O1` or `-O2, -O3` will apply more extensive optimization which make program hard to debug and so on.. but `-O1` is the standard. writing nice C code is better than writing shitty code and try to optimize it with compiler.
 
 I feel guilty of this, I think it is better to read new book on optimization, because this is field of constantly changing. so ....
+
+this chapter in summary:  
+be carful with creating many variables, it cause many steps and instruction.  
+reduce procedure calls(functions)  
+make look more efficient (don’t use recursive functions too(my opinion))
+eliminate unneeded and unnecessary memory references
+you need to understand modern processors(constantly changing)
+do look unrolling
+Use parallelism
+Find and eliminate performance bottlenecks
