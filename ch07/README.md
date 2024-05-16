@@ -66,5 +66,15 @@ when source code is compiled into object files, the compiler generates symbol in
 
 Symbol resolution is the process that the linker associates or resolves the undefined symbols in object files with their corresponding definitions from other object files or libraries during the linking phase.
 
+Relocation, once Linker complete symbol resolution, the linker start Relocation process that is assigning **specific absolute memory address** for the code section and data section of object file or executable file.
 
+Executable object file, now after linker phase file is an executable object file and is ready to load in memory and run.
+
+Loading Executable object file, to run a executable object file you run this command `./prog` (file name), OS will run Loader to load program pass control to program, also for executing some command in program it will need to ask for permission, OS kernel will monitor what program is doing.(for more information need to understand processes, virtual memory, memory mapping)
+
+Dynamic Linking with shared libraries
+a shared library is an object module that at run time or load time can be loaded memory address and linked with a program in memory, this is known as dynamic linking, and performed by dynamic linker.(read the latest document of specific compiler for how to do dynamic linking).
+Dynamic linking is useful because you can update every library of a huge system for user without linking a giant executable file. just a tiny library and user download that library then it can be linked dynamically in load time whenever application run.
+
+A key purpose of shared library is to allow multiple running processes to share the same library code in memory and thus save memory recurses. read about **position-independent code** (PCI) and Library Interpositioning
 
