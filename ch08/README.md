@@ -16,4 +16,27 @@ when the processor detects the event, it makes an indirect procedure call (an ex
 each type of possible exception in a system is assigned a unique nonnegative integer exception number, some of them assigned by designers of processor and others are assigned by the designer of the OS kernel.
 for processor example are: page faults, divide by zero, memory access violations, breakpoints and arithmetic overflows, for OS kernel are system calls and signals from external I/O devices.
 
-once the hardware triggers exception, the rest of the work is done in software by OS's exception handler
+once the hardware triggers exception, the rest of the work is done in software by OS's exception handler.
+
+Classes of Exceptions:
+- interrupts: signal from I/O devices, Async,  Always returns to next instruction.
+- traps: Intentional exception, Sync, Always returns to next instruction.
+- faults: Potentially recoverable error, Sync, Might return to current instruction.
+- aborts: Nonrecoverable error, Sync, Never returns.
+
+Async exceptions occur as a result of events in I/O devices that are external to the processor, Sync exceptions occur as a direct result of executing an instruction
+
+examples of exceptions in x86-64 systems:
+
+| Exception number | Description              | Exception class   |
+| ---------------- | ------------------------ | ----------------- |
+| 0                | Divide error             | Fault             |
+| 13               | General protection fault | Fault             |
+| 14               | Page fault               | Fault             |
+| 18               | Machine check            | Abort             |
+| 32-255           | OS-defined exceptions    | Interrupt or trap |
+
+System Call
+Syscall are simply functions provided by OS kernel for applications for requesting services from kernel to do. like :open, read, write, exit, pause, kill, so on...  
+every syscall has a number like exception number, for example if you want to call a syscall in assembly, so you can store that number in a register so you can call it.
+
