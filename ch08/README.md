@@ -37,6 +37,31 @@ examples of exceptions in x86-64 systems:
 | 32-255           | OS-defined exceptions    | Interrupt or trap |
 
 System Call
-Syscall are simply functions provided by OS kernel for applications for requesting services from kernel to do. like :open, read, write, exit, pause, kill, so on...  
+Syscall are simply functions provided by OS kernel for applications for requesting services from kernel to do. like : open, read, write, exit, pause, kill, so on...  
 every syscall has a number like exception number, for example if you want to call a syscall in assembly, so you can store that number in a register so you can call it.
+
+Processes
+Exception are basic building blocks that allow and help operating system kernel to provide the notion of a process.  
+Process is a concept, **every computer program that is being executed is a Process**  
+like you run a program from shell, it is a process and has its own:
+- Memory Space
+- Execution context
+OS provide this abstraction and make these illusions that Program has exclusive access to processor, memory, I/O devices etc.
+- An independent logical control flow that make illusion that program has exclusive use of the processor
+- A private address space that provides illusion that our program has exclusive use of the memory system
+In reality every process is isolated from another, one process cannot access to another process's data or information, one cannot corrupt another's memory, every process is separated by OS.
+
+
+Concurrent Flow 
+if process A runs and takes too long to complete, then process B have to wait.
+OS try to solve this problem by concurrent flow, A and B execution overlaps in time with each other, called being executed concurrent. for example A begins to be executed then stop after few millisecond, process B begins to be executed stop after few millisecond then A start to to be executed then switch to B and overlapping each other until they are done.  
+it is like they’re running concurrent but processor is just switching between them to execute and make the illusion of concurrent
+Parallel execution is different, A and B truly are executed in Parallel in two Core processor
+
+
+![concurrent vs parallel](assets/ZktFr.png)
+
+
+User mode and Kernel Mode
+there are two modes in computer systems provided by OS, program with user mode cannot execute some instructions(privileged instructions), program with kernel mode can execute any instruction like halt the processor, initiate an I/O operation.
 
