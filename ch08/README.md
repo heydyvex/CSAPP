@@ -65,3 +65,12 @@ Parallel execution is different, A and B truly are executed in Parallel in two C
 User mode and Kernel Mode
 there are two modes in computer systems provided by OS, program with user mode cannot execute some instructions(privileged instructions), program with kernel mode can execute any instruction like halt the processor, initiate an I/O operation.
 
+
+each process has a unique process ID(PID, positive number),  
+from programer's perspective, process have three states: Running, Stopped, Terminated
+(Read about syscall functions that are related to process control)
+process can create another process called child process and the process that create other process called parent process
+
+there is also higher level software form of exceptional control flow, called Linux signal,  signal is a very small massage that notifies process that an event happened in system. It’s Kernel job to send signal to process also it can happen by process to receive signal that is forced by kernel to react.
+
+also at application lever specially in C, program can use nonlocal jumps to bypass normal call or return stack and branch directly from one function to another
