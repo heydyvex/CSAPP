@@ -17,3 +17,17 @@ without VM, CPU access directly the real actual physical address of main memory(
 
 MMU is a cooperation between CPU and OS, dedicated hardware on CPU called MMU translate using a lookup table stored in main memory that contents are managed by OS
 
+every byte of main memory has a virtual address chose from the virtual address space and a physical address chose from a physical address space.
+
+Virtual Page
+A virtual page is a fixed-size block of virtual memory addresses, virtual address space of a process is divided into equal-sized virtual pages, typically ranging from 4KB to 2MB (depends on OS and Hardware architecture), every virtual page has a corresponding entry in the page table which maps the virtual page to a physical page frame in RAM or to a location on disk.
+
+Page Fault
+this error happens when the process attempts to access a virtual page but its corresponding physical page is not present in memory.
+
+page fault is an event so an exception that raises by processor and caught by the OS's MMU, then OS look at the error to determine if it is legitimate access, then try to load page frame to physical memory from disk and updates page table then rerun previous instruction.
+
+overall VM make memory management a lot easier and this technique has a large impact on computer systems.  
+also VM make memory protection a lot easier.
+
+memory mapping is associating virtual memory area with an object(typically a file) on disk.
