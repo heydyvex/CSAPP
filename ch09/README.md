@@ -29,5 +29,4 @@ page fault is an event so an exception that raises by processor and caught by th
 
 overall VM make memory management a lot easier and this technique has a large impact on computer systems.  
 also VM make memory protection a lot easier.
-
 memory mapping is associating virtual memory area with an object(typically a file) on disk.
