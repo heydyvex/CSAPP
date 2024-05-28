@@ -23,3 +23,7 @@ A directory is a file consisting of an array of links each link maps a filename 
 A socket is a file that used to communicate with another process(programs) across the network(internet, another computer)
 
 by typing `/` in terminal, it goes to the root directory, Kernel organize all files in a single directory hierarchy anchored by the root directory called slash `/`. 
+
+
+there are three package and models for I/O operation, Unix I/O, standard I/O and Ri/o.
+standard I/O is implemented on top of Unix I/O and should be used in most of applications but there are some restrictions on std I/O and alternative is Unix I/O at those points.
