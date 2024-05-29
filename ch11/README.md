@@ -19,4 +19,9 @@ there is model called OSI model that consists of 7 layers:
 top layers are software(7, 6, 5) and programs, and bottom(1, 2, 3) layers are hardware.
 softwares are protocols that everyone is agreed to follow, hardwares are different types with different functionality like: network adopter(Ethernet or Wireless), Router, Switch, cable(fiber or something else), radio wave devices(satellite) etc...
 
+Network adopter is just another I/O device that transfer data to memory by DMA.
+
+TCP/IP is family of protocols for internet and communication for now(2024) and will remain this way until we have better or another way to communicate, this protocol is implemented in all host and computers, if you want to write a application you will most likely going use sockets interface and Unix I/O functions, you will communicate with OS kernel and OS kernel with network adopter.
+
+I read a book about network and internet so I'm not gonna spend my time on this subject, I just don’t understand sockets in C and how to make a communication in C program.
 
