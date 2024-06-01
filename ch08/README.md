@@ -59,7 +59,7 @@ it is like they’re running concurrent but processor is just switching between 
 Parallel execution is different, A and B truly are executed in Parallel in two Core processor
 
 
-![concurrent vs parallel](assets/ZktFr.png)
+![concurrent vs parallel](ZktFr.png)
 
 
 User mode and Kernel Mode

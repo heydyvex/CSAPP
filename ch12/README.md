@@ -14,8 +14,8 @@ Concurrency shows up at many different levels of computer system and in many sit
 Some keywords to search about for Concurrent programming and Parallel computing:
 **Concurrency, Parallel computing**,  
 **Single-Core, Multi-Core, MultiProcessor**,  
-**Symmetric Multiprocessing, Simultaneous Multithreading**,  
-**green thread** 
+**Multiprocessing, Multithreading**,  
+**Symmetric Multiprocessing, Simultaneous Multithreading, green thread**  
 
 as I understand from this book and read on the internet, you want to do Concurrent because you want to execute few to many programs(processes) at the same time, go smooth, use all the resources, fast, when you think in level of OS and many program you want to work with, this make so much sense than think about a Calculator program:))
 so in hardware level they tried to put 2 to 16 or more Cores in a single CPU, each core can execute instructions independently. before there were only single-core CPU but when you can put billions of transistor in a small place they said why not many core in a single CPU?
@@ -24,6 +24,25 @@ also for a massive parallel computing, GPU is the best, have way more Cores, lik
 
 the difference between CPU and GPU:
 
-![cpu vs gpu](/assets/CPU%20vs%20GPU.png)
+![cpu vs gpu](CPU%20vs%20GPU.png)
 Credit: [Branch Education](https://www.youtube.com/watch?v=d86ws7mQYIg)
 
+- Concurrency:
+
+- Parallel computing:
+
+- Single-Core processor:
+
+- Multi-Core processor:
+
+- MultiProcessor :
+
+- Multiprocessing:
+
+- Multithreading:
+
+- Symmetric Multiprocessing:
+
+- Simultaneous Multithreading:
+
+- green thread:

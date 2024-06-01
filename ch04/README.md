@@ -26,13 +26,13 @@ also they can be used for analog not only digital systems.
 
 Logic Gates are Boolean functions take and input(true or false, 1 or 0) and give output(true or false, 1 or 0), specific types of digital circuits that perform  logical operation on binary inputs, and three most fundamentals are `AND, OR, NOT`, they used as basic compute elements.
 
-![Gate_in_Computer_Science_reference](/assets/Gate_in_Computer_Science_reference_sheet_e70131cb-748f-488f-9257-6149e56781d1_1024x1024.webp)
+![Gate_in_Computer_Science_reference](Gate_in_Computer_Science_reference_sheet_e70131cb-748f-488f-9257-6149e56781d1_1024x1024.webp)
 
 there are also other logic gates as seen in photo, fancy names but very simple. when you put these functions together you make magic called computer, Claude Shannon find this first (to make logic gate out of Boolean Algebra) by attending to philosophy class so do not forget to read philosophy.
 
 when you put these function together(with some rules) they construct blocks known as combinational circuits, something:
 
-![combinational circuits](/assets/combinational_circuit_design_Limited_Gate_Inputs_Example_3.webp)
+![combinational circuits](combinational_circuit_design_Limited_Gate_Inputs_Example_3.webp)
 
 
 Oh god, not getting into details, I'm in rush for my journey.
@@ -48,7 +48,7 @@ Principles of Pipelining, what is pipelining?
 in a situation where there is no pipelining, an instruction would complete all stages and after that, next instruction would start from first stage and so on...,  
 in a situation where there is pipelining, first instruction fetch then go to next stage, second instruction fetch and so on...
 Pipelining vs non-pipelining:
-![Pipelining vs non-pipelining](/assets/pipelined-vs-non-pipelined-instruction-execution.jpg)
+![Pipelining vs non-pipelining](pipelined-vs-non-pipelined-instruction-execution.jpg)
 
 
 I think the best way to understand it, is to design one (a chip). book didn’t get into it that much.
