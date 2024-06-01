@@ -48,4 +48,5 @@ Credit: [Branch Education](https://www.youtube.com/watch?v=d86ws7mQYIg)
 - green thread:
 
 Difference between Concurrency (time slicing and context switching) and True Concurrent Parallelism  
+
 ![Concurrency vs Parallelism](/assets/ZktFr.png)
