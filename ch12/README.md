@@ -27,7 +27,7 @@ the difference between CPU and GPU:
 ![cpu vs gpu](/assets/CPU%20vs%20GPU.png)
 Credit: [Branch Education](https://www.youtube.com/watch?v=d86ws7mQYIg)
 
-- Concurrency:
+- Concurrency(time slicing and context switching):
 
 - Parallel computing:
 
@@ -46,3 +46,6 @@ Credit: [Branch Education](https://www.youtube.com/watch?v=d86ws7mQYIg)
 - Simultaneous Multithreading:
 
 - green thread:
+
+Difference between Concurrency (time slicing and context switching) and True Concurrent Parallelism  
+![Concurrency vs Parallelism](/assets/ZktFr.png)
