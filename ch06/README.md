@@ -23,7 +23,7 @@ there are two kind of locality, temporal and spatial
 
 programs with good locality run faster that programs with poor locality. in hardware level principle of locality allows hardware designers to speed up main memory access by building small small fast memories known as cache memory, in Operating System level PoL allows the system to use main memory as a cache of the most recently referenced chunks of the virtual address space, also OS uses main memory to cache the most recently used disk blocks in the disk file system, in application level web browsers exploit temporal locality by caching recently referenced documents on a local disk, Web servers hold recently requested documents in front-end disk caches that satisfy requests for these documents without requiring any intervention from the server.
 
-Memory hierarchy:
+Memory hierarchy:  
  ![Memory hierarchy](/assets/word-image115.png)
 
 if level is close to 0, time of access to data is lower means it is so fast, and it is expensive per bit, if level is close to 4 time of access to data is higher means it is slow and it is chip per bit

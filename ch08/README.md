@@ -56,10 +56,10 @@ Concurrent Flow
 if process A runs and takes too long to complete, then process B have to wait.
 OS try to solve this problem by concurrent flow, A and B execution overlaps in time with each other, called being executed concurrent. for example A begins to be executed then stop after few millisecond, process B begins to be executed stop after few millisecond then A start to to be executed then switch to B and overlapping each other until they are done.  
 it is like they’re running concurrent but processor is just switching between them to execute and make the illusion of concurrent
-Parallel execution is different, A and B truly are executed in Parallel in two Core processor
+Parallel execution is different, A and B truly are executed in Parallel in two Core processor. 
 
 
-![concurrent vs parallel](assets/ZktFr.png)
+![concurrent vs parallel](/assets/ZktFr.png)
 
 
 User mode and Kernel Mode

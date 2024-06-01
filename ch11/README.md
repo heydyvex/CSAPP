@@ -14,7 +14,7 @@ client and server are processes and not machines or hosts as they are called, a 
 client and servers often run on separate machines(hosts) and communicate using computer network, networks are complicated and sophisticated systems.
 there is model called OSI model that consists of 7 layers:
 
-![OSI model](assets/OSI-7-layers.jpg)
+![OSI model](/assets/OSI-7-layers.jpg)
 
 top layers are software(7, 6, 5) and programs, and bottom(1, 2, 3) layers are hardware.
 softwares are protocols that everyone is agreed to follow, hardwares are different types with different functionality like: network adopter(Ethernet or Wireless), Router, Switch, cable(fiber or something else), radio wave devices(satellite) etc...

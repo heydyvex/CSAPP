@@ -11,9 +11,9 @@ three important capabilities:
 - simplifies memory management by providing each process with a uniform address space
 - protects the address space of each process from corruption by other processes
 
-without VM, CPU access directly the real actual physical address of main memory(each byte of main memory has a unique real address), with VM, CPU access to a virtual address, then MMU(memory unit management) translate that into physical address.
+without VM, CPU access directly the real actual physical address of main memory(each byte of main memory has a unique real address), with VM, CPU access to a virtual address, then MMU(memory unit management) translate that into physical address.  
 
-![system that uses virtual addressing](assets/mmu1.gif)
+![system that uses virtual addressing](/assets/mmu1.gif)
 
 MMU is a cooperation between CPU and OS, dedicated hardware on CPU called MMU translate using a lookup table stored in main memory that contents are managed by OS
 
