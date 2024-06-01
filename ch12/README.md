@@ -24,7 +24,7 @@ also for a massive parallel computing, GPU is the best, have way more Cores, lik
 
 the difference between CPU and GPU:
 
-![cpu vs gpu](CPU%20vs%20GPU.png)
+![cpu vs gpu](assets/CPU%20vs%20GPU.png)
 Credit: [Branch Education](https://www.youtube.com/watch?v=d86ws7mQYIg)
 
 - Concurrency:
