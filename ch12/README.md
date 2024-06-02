@@ -27,26 +27,26 @@ the difference between CPU and GPU:
 ![cpu vs gpu](/assets/CPU%20vs%20GPU.png)
 Credit: [Branch Education](https://www.youtube.com/watch?v=d86ws7mQYIg)
 
-- Concurrency(time slicing and context switching):
+- Concurrency: is a general word for: "executing two or more tasks(processes) at the same time", it could be illusion of executing at the same time(time slicing) or truly parallel execution
 
-- Parallel computing:
+- time slicing and context switching: a form of concurrency that OS kernel use scheduling and time slicing and context switching to make two or more processes to get executed at same time but it is not really at the same time only illusion.
 
-- Single-Core processor:
+- Parallelism and parallel computing: Parallelism means two or more tasks(processes) truly being executed at the same time, like for real.
 
-- Multi-Core processor:
+- Single-Core processor: a processor that has only one Core that execute instruction.
 
-- MultiProcessor :
+- Multi-Core processor: a processor that has 2 to 32 Core that each one can independently execute instructions(in parallel).
 
-- Multiprocessing:
+- MultiProcessor : two or more CPU(a whole processor not a Core) that can execute instructions in parallel but share main memory.
 
-- Multithreading:
+- Multiprocessing: executing Processes at the same time and distribute them across the Cores or processors to get them executed in parallel. each process have their own address and memory space and is not shared but they can share using IPC.
 
-- Symmetric Multiprocessing:
+- Thread and Multithreading: thread is part a process, it is hard to do multiprocessing when processes have their own address and memory separated. but threads shares parent process address and memory address so it is easier to concurrency and parallelism, and usually in applications, threads are used to make application concurrent, a process can be divided into many threads so to make it parallel
 
-- Simultaneous Multithreading:
+- green thread: also called virtual thread, is a thread that is scheduled by runtime library or virtual memory instead of natively by the OS, it means not relying on OS kernel ability and they are managed in user space not in kernel space. Golang use green threads but runtime actually rely on OS and programmer won’t see that part I guess.
 
-- green thread:
-
-Difference between Concurrency (time slicing and context switching) and True Concurrent Parallelism  
+more pictures to understand time slicing concurrency and parallelism:  
 
 ![Concurrency vs Parallelism](/assets/ZktFr.png)
+![sequential vsconcurrent vs parallel](/assets/bsdfwer.png)
+![concurrent vs parallel](/assets/Concurrent%20vs%20parallel.webp)
