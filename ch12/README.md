@@ -43,7 +43,7 @@ Credit: [Branch Education](https://www.youtube.com/watch?v=d86ws7mQYIg)
 
 - Thread and Multithreading: thread is part a process, it is hard to do multiprocessing when processes have their own address and memory separated. but threads shares parent process address and memory address so it is easier to concurrency and parallelism, and usually in applications, threads are used to make application concurrent, a process can be divided into many threads so to make it parallel
 
-- green thread: also called virtual thread, is a thread that is scheduled by runtime library or virtual memory instead of natively by the OS, it means not relying on OS kernel ability and they are managed in user space not in kernel space. Golang use green threads but runtime actually rely on OS and programmer won’t see that part I guess.
+- green thread: also called virtual thread, is a thread that is scheduled by runtime library or virtual memory instead of natively by the OS, it means not relying on OS kernel ability and they are managed in user space not in kernel space. Golang use green threads but runtime actually and obviously rely on OS and programmer won’t see that part I guess.
 
 more pictures to understand time slicing concurrency and parallelism:  
 
