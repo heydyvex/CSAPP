@@ -18,9 +18,9 @@ note: Homework practices are different from what there are in book.
 
 --- 
 Few words  
-Eventually one needs to write a small version of that systems that one wants to understand.  
+Eventually one needs to write a small version of that systems in order to understand.  
 Also one needs to seek good explanations in order to understand it.  
-If one cannot understand a subject, theory or system etc..., problem could be the teacher(some one who teaches the explanation of something), or problem could be the wrong question sometimes you need to look for what problem something solves instead of definition of that something.  
+If one cannot understand a subject, theory or system etc..., problem could be the teacher or documentation, or problem could be the wrong questions, sometimes you need to look for what problem something solves instead of definition of that something.  
 
 try to implement from scratch:  
 a tiny processor architecture   
