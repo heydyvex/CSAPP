@@ -17,11 +17,12 @@ notes and Homework practice for Computer Systems: A Programmer's Perspective
 note: Homework practices are different from what there are in book.
 
 --- 
-Few words  
-Eventually one needs to write a small version of that systems in order to understand.  
-Also one needs to seek good explanations in order to understand it.  
+Few words 
+Also one needs to seek good explanations(David Deutsch's principle) in order to understand it. 
+Eventually one needs to write a small version of that systems in order to understand.   
 If one cannot understand a subject, theory or system etc..., problem could be the teacher or documentation, or problem could be the wrong questions, sometimes you need to look for what problem something solves instead of definition of that something.  
 
+seek good explanations like turing computation theory, Deutsch's universal quantum computer and shannon's information theory.  
 try to implement from scratch:  
 a tiny processor architecture   
 a tiny OS kernel  
